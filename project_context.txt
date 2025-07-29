@@ -1,0 +1,149 @@
+Project structure:
+.
+├── LICENSE
+├── codebase_files.txt
+├── eslint.config.js
+├── package-lock.json
+├── package.json
+├── project_context.txt
+├── readme.md
+├── renovate.json5
+├── scripts
+│   └── mkcomponent.sh
+├── src
+│   ├── assets
+│   │   ├── avatar-ben.png
+│   │   ├── avatar-finn.png
+│   │   ├── avatar-frodo.jpg
+│   │   ├── avatar-gollum.jpg
+│   │   ├── avatar-han.png
+│   │   ├── avatar-leia.png
+│   │   ├── avatar-luke.png
+│   │   ├── avatar-poe.png
+│   │   ├── avatar-rey.png
+│   │   ├── avatar-samwise.jpg
+│   │   ├── avatar-yoda.png
+│   │   ├── avatar.svg
+│   │   ├── boniver.jpeg
+│   │   ├── card-album.png
+│   │   ├── card-coworker-avatar.png
+│   │   ├── card-coworker-header.png
+│   │   ├── card-top-img.png
+│   │   ├── chancetherapper.jpeg
+│   │   ├── childishgambino.jpeg
+│   │   ├── component-icon.svg
+│   │   ├── fonts
+│   │   ├── icon
+│   │   ├── ironwine.jpeg
+│   │   ├── kimbra.jpeg
+│   │   ├── logo-amtrak.png
+│   │   ├── logo-shipt.png
+│   │   ├── logo-sworkit.png
+│   │   ├── logo-untappd.png
+│   │   ├── madison.jpg
+│   │   ├── pinkfloyd.jpeg
+│   │   ├── porterrobinson.jpeg
+│   │   ├── slide-1.png
+│   │   ├── slide-2.png
+│   │   ├── slide-3.png
+│   │   ├── slide-4.png
+│   │   ├── thebeatles.jpeg
+│   │   └── thumbnail.svg
+│   ├── components
+│   │   ├── _template_
+│   │   ├── accordion
+│   │   ├── action-sheet
+│   │   ├── alert
+│   │   ├── app-home
+│   │   ├── app-root
+│   │   ├── avatar
+│   │   ├── badge
+│   │   ├── breadcrumbs
+│   │   ├── button
+│   │   ├── card
+│   │   ├── checkbox
+│   │   ├── chip
+│   │   ├── component-details
+│   │   ├── content
+│   │   ├── datetime
+│   │   ├── fab
+│   │   ├── grid
+│   │   ├── icons
+│   │   ├── infinite-scroll
+│   │   ├── input
+│   │   ├── input-otp
+│   │   ├── item
+│   │   ├── item-group
+│   │   ├── list
+│   │   ├── loading
+│   │   ├── menu
+│   │   ├── modal
+│   │   ├── nav
+│   │   ├── note
+│   │   ├── picker
+│   │   ├── popover
+│   │   ├── progress
+│   │   ├── radio
+│   │   ├── range
+│   │   ├── refresher
+│   │   ├── reorder
+│   │   ├── searchbar
+│   │   ├── segment
+│   │   ├── select
+│   │   ├── skeleton-text
+│   │   ├── spinner
+│   │   ├── tabs
+│   │   ├── text
+│   │   ├── thumbnail
+│   │   ├── toast
+│   │   ├── toggle
+│   │   └── toolbar
+│   ├── components.d.ts
+│   ├── global
+│   │   ├── app.css
+│   │   └── app.ts
+│   ├── index.html
+│   ├── interfaces.d.ts
+│   ├── manifest.json
+│   └── utils
+│       └── component-utils.ts
+├── static.json
+├── stencil.config.ts
+└── tsconfig.json
+
+57 directories, 54 files
+Package.json content:
+{
+  "name": "ionic-docs-demo",
+  "private": true,
+  "version": "0.0.1",
+  "description": "ionic-docs-demo",
+  "license": "MIT",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "lint": "eslint src/ --ext .js,.ts,.jsx,.tsx",
+    "lint.fix": "npm run lint -- --fix",
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "dependencies": {
+    "@ionic/core": "^8.6.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@stencil/core": "^4.33.1",
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "jest": "^29.7.0",
+    "jest-cli": "^29.7.0",
+    "puppeteer": "^24.10.0",
+    "typescript": "^5.0.0"
+  }
+}
